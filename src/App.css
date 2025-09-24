@@ -29,6 +29,22 @@
 
 .app-bottom {
   display: flex;
-  flex: 0 0 20%;
+  flex-direction: column;
+  flex: 0 0 15%;
   margin: 3px;
+  justify-content: center;
+  align-items: center;
+}
+table{
+  width: 90%;
+  height: 10px;
+  margin: 10px;
+}
+
+table ,th,td {
+  border: 1px solid black;
+}
+
+th,td{
+  padding: 10px;
 }

@@ -43,6 +43,7 @@ function App() {
     },
   ]);
   const [filters, setFilters] = useState({});
+
   // menu constructions
   const { names, ages, cities } = users.reduce(
     (list, user) => {
@@ -70,8 +71,16 @@ function App() {
         setFilters={setFilters}
         filters={filters}
       />
-      <Main users={users} />
-      <Bottom />
+      <Main
+        users={users.filter((user) => {
+          return (
+            (!filters.name || user.name === filters.name) &&
+            (!filters.age || user.age === filters.age) &&
+            (!filters.city || user.city === filters.city)
+          );
+        })}
+      />
+      <Bottom filters={filters} />
     </div>
   );
 }

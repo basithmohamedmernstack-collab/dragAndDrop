@@ -6,7 +6,6 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 
 const CustomMenu = ({ items, setFilters, menuKey, filters }) => {
-  console.log({ menuKey });
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedItem, setSelectedItem] = useState("");
   const open = Boolean(anchorEl);
