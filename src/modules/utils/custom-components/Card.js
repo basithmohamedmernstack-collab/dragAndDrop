@@ -9,7 +9,6 @@ const CustomCard = ({ user = {}, handleIfDraggedUser }) => {
   };
 
   const isdisabled = user.isDragged || false;
-  console.log({ user });
 
   return (
     <Box sx={{ minWidth: 300 }}>
