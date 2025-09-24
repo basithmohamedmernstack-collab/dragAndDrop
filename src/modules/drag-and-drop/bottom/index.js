@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import TableView from "../../utils/custom-components/TableView";
 
-const Bottom = ({ filters }) => {
+const Bottom = ({ filters, handleIfDraggedUser, handleIfVerifiedUser }) => {
   const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
@@ -10,7 +10,12 @@ const Bottom = ({ filters }) => {
 
   return (
     <div className="app-bottom">
-      <TableView tableData={tableData} setTableData={setTableData} />
+      <TableView
+        tableData={tableData}
+        setTableData={setTableData}
+        handleIfDraggedUser={handleIfDraggedUser}
+        handleIfVerifiedUser={handleIfVerifiedUser}
+      />
     </div>
   );
 };

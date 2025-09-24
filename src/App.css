@@ -20,7 +20,7 @@
 
 .app-main {
   display: flex;
-  flex: 0 0 70%;
+  flex: 0 0 60%;
   margin: 3px;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -30,7 +30,7 @@
 .app-bottom {
   display: flex;
   flex-direction: column;
-  flex: 0 0 15%;
+  flex: 0 0 25%;
   margin: 3px;
   justify-content: center;
   align-items: center;
@@ -47,4 +47,9 @@ table ,th,td {
 
 th,td{
   padding: 10px;
+}
+
+.table-action-btn{
+  display: flex;
+  justify-content: space-around;
 }
